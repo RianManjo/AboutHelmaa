@@ -1,0 +1,39 @@
+*, html {
+    margin: 0;
+    padding: 0;    
+}
+
+#Main {
+    background-color: #FFDA86;
+    height: 100vh;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+#Main audio {    
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    display: none;
+}
+
+#Main .envelope {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Main .envelope img {
+    width: 400px;
+    height: 500px;
+}
+
+@media (max-width: 768px) {
+    #Main .envelope img {
+        width: 300px;
+        height: 400px;
+    }
+} 
+

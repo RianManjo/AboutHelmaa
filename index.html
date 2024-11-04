@@ -13,10 +13,10 @@
 </head>
 <body>
     <div id="bodyblur"><img src="assets/images/Frame 40439.jpg" width="100%" height="100%"/></div>
-    <!-- Isi Konten -->
+    
     <div id='Content'>
         <div class="image"><img src="assets/images/tkthao219-bubududu.gif" width="130px" height="130px"/></div>
-        <!--<div id="sp1"></div>-->
+        
         <div>
         <blockquote>
             <p id="text"></p>
@@ -47,7 +47,7 @@
         }
     </script>
     <script type="text/javascript">
-        function play() {//Link Audio Bisa Diganti
+        function play() {
         var audio = new Audio('i miss everything about you.mp3');audio.play();}
         
                     const swals = Swal.mixin({allowOutsideClick: false, cancelButtonColor: '#FF0040',});
@@ -55,7 +55,7 @@
                     const swalst = Swal.mixin({allowOutsideClick: false, showConfirmButton: false, timer: 3000, timerProgressBar: true,});
                     
                     async function mulaitanya(){
-                    var { isConfirmed: tanyawal } = await swals.fire({title: `Hai kamu!`, text: `Mau isi nama kamu dulu atau langsung aja?`, imageUrl: 'https://i.pinimg.com/originals/11/34/6d/11346dddf58c840904e37cba85415a11.gif', imageWidth: 120, imageHeight: 120, confirmButtonText: 'Isi Nama', cancelButtonText: 'Langsung Aja', allowOutsideClick: false, showCancelButton: true,
+                    var { isConfirmed: tanyawal } = await swals.fire({title: `Hai kamu <br> TOLONG DI CHAT LAGI YAAA! ORANGNYA GENGSI MAU CHAT DLUAN`, text: `Mau isi nama kamu dulu atau langsung aja?`, imageUrl: 'https://i.pinimg.com/originals/11/34/6d/11346dddf58c840904e37cba85415a11.gif', imageWidth: 120, imageHeight: 120, confirmButtonText: 'Isi Nama', cancelButtonText: 'Langsung Aja', allowOutsideClick: false, showCancelButton: true,
                         });if(tanyawal){mulai();play();} else {nama = 'Kamu';kuis();play();}
                     }
         
@@ -144,7 +144,7 @@
             });
             showDiv();
         }
-        //Selingan
+
         } else {
             await swals.fire({
             title: '' + teksatas,
